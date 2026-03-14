@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #0a0a0a;
+  border-bottom: 1px solid #1e1e1e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4fc3f7;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav ul a:hover {
+  color: #4fc3f7;
+}
+
+.btn-nav {
+  background-color: #4fc3f7;
+  color: #0a0a0a !important;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #0a0a0a 0%, #0d1b2a 100%);
+}
+
+.hero-innhold h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+.hero-innhold h1 span {
+  color: #4fc3f7;
+}
+
+.hero-innhold p {
+  font-size: 1.15rem;
+  color: #aaaaaa;
+  max-width: 550px;
+  margin: 0 auto 35px;
+}
+
+.btn {
+  background-color: #4fc3f7;
+  color: #0a0a0a;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background-color: #81d4fa;
+}
+
+/* TJENESTER */
+.tjenester {
+  padding: 80px 60px;
+  text-align: center;
+  background-color: #0f0f0f;
+}
+
+.tjenester h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #f0f0f0;
+}
+
+.kort-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.kort {
+  background-color: #161616;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 35px 25px;
+  transition: border-color 0.3s;
+}
+
+.kort:hover {
+  border-color: #4fc3f7;
+}
+
+.kort h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.kort p {
+  color: #aaaaaa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* OM OSS */
+.om {
+  padding: 80px 60px;
+  background-color: #0a0a0a;
+  text-align: center;
+}
+
+.om-innhold {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.om h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.om p {
+  color: #aaaaaa;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* KONTAKT */
+.kontakt {
+  padding: 80px 60px;
+  background-color: #0f0f0f;
+  text-align: center;
+}
+
+.kontakt h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.kontakt p {
+  color: #aaaaaa;
+  margin-bottom: 35px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  background-color: #161616;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 14px;
+  color: #f0f0f0;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #4fc3f7;
+}
+
+form button {
+  background-color: #4fc3f7;
+  color: #0a0a0a;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background-color: #81d4fa;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #0a0a0a;
+  border-top: 1px solid #1e1e1e;
+  color: #555;
+  font-size: 0.85rem;
+}
