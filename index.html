@@ -169,6 +169,17 @@
     hamburger.addEventListener('click', () => {
       menu.classList.toggle('open');
     });
+    const logo = document.getElementById('nav-logo');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 80) {
+    logo.style.opacity = '1';
+    logo.style.transform = 'translateY(0)';
+  } else {
+    logo.style.opacity = '0';
+    logo.style.transform = 'translateY(-10px)';
+  }
+});
+
   </script>
 
 </body>
